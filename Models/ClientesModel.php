@@ -101,12 +101,14 @@ class ClientesModel extends Query
         return $this->selectAll($sql);
     }
 
-    public function comprobarCalificacion($id_producto, $id_cliente){
+    public function comprobarCalificacion($id_producto, $id_cliente)
+    {
         $sql = "SELECT * FROM calificaciones WHERE id_producto = $id_producto AND id_cliente = $id_cliente";
         return $this->select($sql);
     }
 
-    public function agregarCalificacion($cantidad, $id_producto, $id_cliente){
+    public function agregarCalificacion($cantidad, $id_producto, $id_cliente)
+    {
         $sql = "INSERT INTO calificaciones (cantidad, id_producto, id_cliente) VALUES (?,?,?)";
         $datos = array($cantidad, $id_producto, $id_cliente);
         $data = $this->insertar($sql, $datos);
@@ -118,7 +120,8 @@ class ClientesModel extends Query
         return $res;
     }
 
-    public function cambiarCalificacion($cantidad, $id_producto, $id_cliente){
+    public function cambiarCalificacion($cantidad, $id_producto, $id_cliente)
+    {
         $sql = "UPDATE calificaciones SET cantidad=? WHERE id_producto=? AND id_cliente=?";
         $datos = array($cantidad, $id_producto, $id_cliente);
         $data = $this->save($sql, $datos);

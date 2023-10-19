@@ -31,7 +31,7 @@
     <link rel="stylesheet" type="text/css" href="<?php echo BASE_URL . 'assets/DataTables/datatables.min.css'; ?>">
 </head>
 
-<body>
+<body style="font-family: cursive;">
     <!--wrapper-->
     <div class="wrapper">
         <!--sidebar wrapper -->

@@ -23,7 +23,7 @@
 	<title><?php echo $data['title']; ?></title>
 </head>
 
-<body class="bg-login">
+<body class="bg-login" style="font-family: cursive;">
 	<!--wrapper-->
 	<div class="wrapper">
 		<div class="d-flex align-items-center justify-content-center my-5 my-lg-0">

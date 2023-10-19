@@ -50,9 +50,6 @@
                             </div>
                             <div class="row pb-3">
                                 <div class="col d-grid">
-                                    <button type="submit" class="btn btn-primary btn-lg" name="submit" value="buy">Comprar</button>
-                                </div>
-                                <div class="col d-grid">
                                     <button type="button" class="btn btn-primary btn-lg" id="btnAddCart">Añadir</button>
                                 </div>
                             </div>

@@ -7,7 +7,7 @@
             <div class="row">
                 <div class="col-md-12">
                     <ul class="list-inline shop-top-menu pb-3 pt-1">
-                        <li class="list-inline-item">
+                        <!-- <li class="list-inline-item">
                             <a class="h3 text-dark text-decoration-none mr-3" href="#">All</a>
                         </li>
                         <li class="list-inline-item">
@@ -15,7 +15,7 @@
                         </li>
                         <li class="list-inline-item">
                             <a class="h3 text-dark text-decoration-none" href="#">Women's</a>
-                        </li>
+                        </li> -->
                     </ul>
                 </div>
             </div>
@@ -56,7 +56,7 @@
                                         <span class="product-color-dot color-dot-green float-left rounded-circle ml-1"></span>
                                     </li>
                                 </ul>
-                                <p class="text-center mb-0"><?php echo MONEDA . $producto['precio']; ?></p>
+                                <p class="text-center mb-0"><?php echo MONEDA . " " . $producto['precio']; ?></p>
                             </div>
                         </div>
                     </div>

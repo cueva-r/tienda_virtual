@@ -51,7 +51,7 @@ class PrincipalModel extends Query
     //busqueda de productos
     public function getBusqueda($valor)
     {
-        $sql = "SELECT * FROM productos WHERE nombre LIKE '%".$valor."%' OR descripcion LIKE '%".$valor."%' LIMIT 5";
+        $sql = "SELECT * FROM productos WHERE nombre LIKE '%" . $valor . "%' OR descripcion LIKE '%" . $valor . "%' LIMIT 5";
         return $this->selectAll($sql);
     }
 }
